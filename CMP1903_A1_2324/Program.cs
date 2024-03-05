@@ -23,7 +23,7 @@ namespace CMP1903_A1_2324
             Console.WriteLine("Press enter to test your values for any errors, if none are found the program will end.");
             Console.ReadLine();
 
-            Testing.gameTester(); //uses the testing class to find any erroneous values
+            Testing.gameTester(); //uses the testing class to find any erroneous results
         }
     }
 }
