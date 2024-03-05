@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
+using System.Security.Permissions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -14,10 +16,23 @@ namespace CMP1903_A1_2324
          */
 
         //Property
+        private Random roll; //makes a new random object 
 
+        //Constructor
+        public Die()
+        {
+            roll = new Random();
+            diceRoller(); //calls the method to roill the dice
+        }
 
         //Method
+        public int diceRoller()
+        {
+            int currentValue = roll.Next(1, 7); //rolls the dice stores the current value
+            return currentValue; //returns the value
+        }
 
 
     }
 }
+
