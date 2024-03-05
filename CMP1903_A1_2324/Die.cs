@@ -15,27 +15,21 @@ namespace CMP1903_A1_2324
          * and one method that rolls the die, returns and integer and takes no parameters.
          */
 
-        private Random roll;
-        private int _currentValue;
+        //Property
+        private Random roll; //makes a new random object 
 
+        //Constructor
         public Die()
         {
             roll = new Random();
-            diceRoller();
-        }
-
-        //Property
-        public int currentValue
-        {
-            get { return _currentValue; }
-            set { _currentValue = value; }
+            diceRoller(); //calls the method to roill the dice
         }
 
         //Method
         public int diceRoller()
         {
-            int currentValue = roll.Next(1, 7);
-            return currentValue;
+            int currentValue = roll.Next(1, 7); //rolls the dice stores the current value
+            return currentValue; //returns the value
         }
 
 
