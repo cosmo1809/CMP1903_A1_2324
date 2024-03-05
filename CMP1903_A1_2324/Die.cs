@@ -16,8 +16,7 @@ namespace CMP1903_A1_2324
          */
 
         private Random roll;
-        private int newValue;
-        //Property
+        private int _currentValue;
 
         public Die()
         {
@@ -25,17 +24,18 @@ namespace CMP1903_A1_2324
             diceRoller();
         }
 
-        public int CurrentValue
+        //Property
+        public int currentValue
         {
-            get { return newValue; }
-            private set { newValue = value; }
+            get { return _currentValue; }
+            set { _currentValue = value; }
         }
 
         //Method
         public int diceRoller()
         {
-            newValue = roll.Next(1, 7);
-            return newValue;
+            int currentValue = roll.Next(1, 7);
+            return currentValue;
         }
 
 
