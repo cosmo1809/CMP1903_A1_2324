@@ -16,19 +16,19 @@ namespace CMP1903_A1_2324
          */
 
         //Property
-        private Random roll; //makes a new random object 
+        private Random _roll; //makes a new random object 
 
         //Constructor
         public Die()
         {
-            roll = new Random();
-            diceRoller(); //calls the method to roill the dice
+            _roll = new Random();
+            DiceRoller(); //calls the method to roill the dice
         }
 
         //Method
-        public int diceRoller()
+        public int DiceRoller()
         {
-            int currentValue = roll.Next(1, 7); //rolls the dice stores the current value
+            int currentValue = _roll.Next(1, 7); //rolls the dice stores the current value
             return currentValue; //returns the value
         }
 

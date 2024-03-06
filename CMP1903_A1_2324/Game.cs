@@ -18,7 +18,7 @@ namespace CMP1903_A1_2324
          */
 
         //Methods
-        public static Tuple<int, int, int, int> startGame() //method to perform all the operations of the game
+        public static Tuple<int, int, int, int> StartGame() //method to perform all the operations of the game
         {
             Die dice = new Die(); //makes a new dice to be rolled
             //declaring all the variables for the calulations
@@ -28,7 +28,7 @@ namespace CMP1903_A1_2324
 
             for (int i = 0; i < 3; i++) //looped to roll 3 times
             {
-                newRoll = dice.diceRoller(); //rolls the dice
+                newRoll = dice.DiceRoller(); //rolls the dice
                 savedRolls[i] = newRoll; //saves the result to the correct array position
                 total = total + newRoll; //adds to the total
             }
